@@ -1,13 +1,14 @@
-import { useEffect, useState, type MouseEvent } from 'react';
-import './App.css'
+import {  useState, type MouseEvent } from 'react';
 import Button from './components/Button/Button';
 
 function App() {
 
-  const [counter SetCounter] = useState<number>();
+  const [counter, setCounter] = useState<number>(0);
 
-  const addCounter = (e: MouseEvent) => {
+  const addCounter = (e: MouseEvent<HTMLButtonElement>) => {
     console.log(e);
+    console.log(counter);
+    setCounter(2)
   }
 
   return (
