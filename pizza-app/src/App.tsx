@@ -1,5 +1,6 @@
 import {  useState, type MouseEvent } from 'react';
 import Button from './components/Button/Button';
+import Input from './components/Input/Input';
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <>
-      <Button onClick={addCounter} >Привет</Button>
+      <Button onClick={addCounter} appearence='small' >Привет</Button>
+      <Button onClick={addCounter} appearence='big' >Привет</Button>
+      <Input placeholder='Email' />
     </>
   )
 
