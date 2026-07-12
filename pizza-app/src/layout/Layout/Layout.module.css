@@ -1,0 +1,8 @@
+.layout {
+  display: flex;
+}
+
+.menu {
+  border-right: 1px solid var(--separator-color);
+  padding: 30px;
+}
