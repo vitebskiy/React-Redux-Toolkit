@@ -1,7 +1,18 @@
-import Headling from "../../components/Headling/Hedling";
+import Headling from '../../components/Headling/Hedling';
+import ProductCard from '../../components/ProductCard/ProductCard';
+import Search from '../../components/Search/Search';
+import styles from './Menu.module.css';
 
 export function Menu() {
-  return <>
-    <Headling>Меню</Headling>
-  </>;
+  return (
+    <>
+      <div className={styles['head']}>
+        <Headling>Меню</Headling>
+        <Search placeholder="Введите блюда или состав" />
+      </div>
+      <div className="">
+        <ProductCard id={1} title="Наслаждение" description="тест" rating={4.5} price={300} image="./product-demo.png" />
+      </div>
+    </>
+  );
 }
