@@ -11,7 +11,7 @@ export function Menu() {
         <Search placeholder="Введите блюда или состав" />
       </div>
       <div className="">
-        <ProductCard id={1} title="Наслаждение" description="тест" rating={4.5} price={300} image="./product-demo.png" />
+        <ProductCard id={1} title="Наслаждение" description="Салями, руккола, помидоры, оливки" rating={4.5} price={300} image="./product-demo.png" />
       </div>
     </>
   );
