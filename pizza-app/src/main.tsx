@@ -8,7 +8,7 @@ import { Menu } from './pages/Menu/Menu.tsx';
 import { Cart } from './pages/Cart/Cart.tsx';
 import { Error } from './pages/Error/Error.tsx';
 import { Layout } from './layout/Layout/Layout.tsx';
-
+import { Product } from './pages/Product/Product.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -17,13 +17,17 @@ const rounter = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Menu />
+        element: <Menu />,
       },
       {
         path: '/cart',
-        element: <Cart />
-      }
-    ]
+        element: <Cart />,
+      },
+      {
+        path: '/product/:id',
+        element: <Product />,
+      },
+    ],
   },
   {
     path: '/*',
